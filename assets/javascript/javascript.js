@@ -1,5 +1,6 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyAyVQ3eg1ez08-KT85EfETVaN25csWyHiA",
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyAyVQ3eg1ez08-KT85EfETVaN25csWyHiA",
     authDomain: "train-scheduler-1934f.firebaseapp.com",
     databaseURL: "https://train-scheduler-1934f.firebaseio.com",
     projectId: "train-scheduler-1934f",
@@ -11,6 +12,7 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
+</script>
 
 var trainData = firebase.database();
 
