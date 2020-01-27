@@ -1,16 +1,16 @@
-var config = {
-    apiKey: "AIzaSyAyVQ3eg1ez08-KT85EfETVaN25csWyHiA",
-    authDomain: "train-scheduler-1934f.firebaseapp.com",
-    databaseURL: "https://train-scheduler-1934f.firebaseio.com",
-    projectId: "train-scheduler-1934f",
-    storageBucket: "train-scheduler-1934f.appspot.com",
-    messagingSenderId: "212664747432",
-    appId: "1:212664747432:web:1fe3a1533f6d30547c099d",
-    measurementId: "G-2E1LRRDL6W"
+var firebaseConfig = {
+    apiKey: "AIzaSyDjluOVqlc8KteL8aHveMEORIlpMGfQPkg",
+    authDomain: "train-scheduler-2ca1a.firebaseapp.com",
+    databaseURL: "https://train-scheduler-2ca1a.firebaseio.com",
+    projectId: "train-scheduler-2ca1a",
+    storageBucket: "train-scheduler-2ca1a.appspot.com",
+    messagingSenderId: "573028567462",
+    appId: "1:573028567462:web:c7c9ca9471a76aeb05a767",
+    measurementId: "G-T2BLGB20T8"
 };
-
-firebase.initializeApp(config);
-
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 var trainData = firebase.database();
 
 $("#addTrainBtn").on("click", function () {
