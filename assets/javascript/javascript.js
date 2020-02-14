@@ -1,4 +1,4 @@
-var firebaseConfig = {
+var config = {
     apiKey: "AIzaSyDjluOVqlc8KteL8aHveMEORIlpMGfQPkg",
     authDomain: "train-scheduler-2ca1a.firebaseapp.com",
     databaseURL: "https://train-scheduler-2ca1a.firebaseio.com",
@@ -9,8 +9,8 @@ var firebaseConfig = {
     measurementId: "G-T2BLGB20T8"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+firebase.initializeApp(config);
+//firebase.analytics();
 
 var trainData = firebase.database();
 
