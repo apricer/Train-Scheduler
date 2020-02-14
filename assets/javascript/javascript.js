@@ -36,6 +36,7 @@ $("#addTrainBtn").on("click", function () {
     $("firstTrainInput").val("");
     $("frequencyInput").val("");
 
+    console.log(firstTrain);
     return false;
 })
 
