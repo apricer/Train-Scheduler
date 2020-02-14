@@ -11,6 +11,7 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
+
 var trainData = firebase.database();
 
 $("#addTrainBtn").on("click", function () {
