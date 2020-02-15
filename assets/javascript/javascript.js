@@ -14,7 +14,9 @@ firebase.initializeApp(config);
 
 var trainData = firebase.database();
 
-$("#addTrainBtn").on("click", function () {
+$("#addTrainBtn").on("click", function (event) {
+    event.preventDefault();
+
     var trainName = $("#trainNameInput").val().trim();
     var destination = $("#destinationInput").val().trim();
     var firstTrain = moment($("#firstTrainInput").val().trim(), "HH;mm").subtract(10, "years").format("X");
